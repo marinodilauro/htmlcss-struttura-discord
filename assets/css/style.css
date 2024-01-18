@@ -32,11 +32,32 @@ span {
 
 /* #endregion Utilities */
 
+/* #region Debug rules */
 .debug header {
     height: 80px;
     background-color: var(--var-header_bg);
 }
 
+.debug .header_obj {
+    background-color: var(--var-header_obj);
+    border: 2px dashed black;
+}
+
+.debug .banner_container {
+    height: 500px;
+    background-color: var(--var-banner_bg);
+}
+
+.debug .banner {
+    width: 50%;
+    height: 80%;
+    background-color: var(--var-banner_obj);
+    border: 2px dashed black;
+}
+
+/* #endregion Debug rules */
+
+/* #region Header */
 header {
     display: flex;
     justify-content: center;
@@ -48,8 +69,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 48px;
-    background-color: var(--var-header_obj);
-    border: 2px dashed black;
+
 }
 
 #logo_img,
@@ -74,3 +94,15 @@ header {
 .login {
     justify-content: flex-end;
 }
+
+/* #endregion Header */
+
+/* #region Main */
+
+.banner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #endregion Main */
