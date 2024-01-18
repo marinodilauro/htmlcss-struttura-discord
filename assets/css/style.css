@@ -65,6 +65,10 @@ span {
     height: 500px;
 }
 
+.debug .last_section_container {
+    height: 1000px;
+}
+
 .white_bg {
     background-color: var(--var-white_section);
 }
@@ -75,9 +79,14 @@ span {
 
 .debug .section_obj1,
 .section_obj2 {
-    width: 25%;
+
     height: 80%;
     border: 2px dashed black;
+}
+
+.debug .section_obj3 {
+    width: 50%;
+    height: 90%;
 }
 
 .debug .section_obj1 {
@@ -86,6 +95,10 @@ span {
 
 .debug .section_obj2 {
     background-color: var(--var-section_obj2);
+}
+
+.debug .section_obj3 {
+    background-color: var(--var-section_obj3);
 }
 
 
@@ -153,8 +166,14 @@ header {
     align-items: center;
 }
 
+.last_section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section_obj1 {
-    flex-grow: 2;
+    flex-grow: 1.5;
 }
 
 .section_obj2 {
