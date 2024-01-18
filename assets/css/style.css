@@ -70,8 +70,8 @@ hr {
 
 /* #region Sections debug rules */
 .debug .main_section_container {
-    width: 50%;
-    height: 500px;
+    width: 70%;
+    height: 600px;
 }
 
 .debug .last_section_container {
@@ -88,13 +88,12 @@ hr {
 
 .debug .section_obj1,
 .section_obj2 {
-
     height: 80%;
     border: 2px dashed black;
 }
 
 .debug .section_obj3 {
-    width: 50%;
+    width: 70%;
     height: 90%;
 }
 
