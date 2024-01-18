@@ -63,7 +63,14 @@ span {
 .debug .main_section_container {
     width: 50%;
     height: 500px;
+}
+
+.white_bg {
     background-color: var(--var-white_section);
+}
+
+.grey_bg {
+    background-color: var(--var-grey_section);
 }
 
 .debug .section_obj1,
