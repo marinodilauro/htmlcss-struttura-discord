@@ -32,16 +32,15 @@ span {
     padding: 0 1rem;
 }
 
-.logo_img,
-.login_btn {
-    padding: 0 1rem;
+hr {
+    width: 70%;
 }
 
 /* #endregion Utilities */
 
 /* #region Debug rules */
 
-/* Header debug rules */
+/* #region Header debug rules */
 .debug #site_header {
     height: 80px;
     background-color: var(--var-header_bg);
@@ -52,7 +51,9 @@ span {
     border: 2px dashed black;
 }
 
-/* Banner debug rules */
+/* #endregion Header debug rules */
+
+/* #region Banner debug rules */
 .debug .banner_container {
     height: 500px;
     background-color: var(--var-banner_bg);
@@ -65,7 +66,9 @@ span {
     border: 2px dashed black;
 }
 
-/* Sections debug rules */
+/* #endregion Banner debug rules */
+
+/* #region Sections debug rules */
 .debug .main_section_container {
     width: 50%;
     height: 500px;
@@ -107,7 +110,9 @@ span {
     background-color: var(--var-section_obj3);
 }
 
-/* Footer debug rules */
+/* #endregion Sections debug rules */
+
+/* #region Footer debug rules */
 
 .debug #site_footer {
     height: 700px;
@@ -116,7 +121,7 @@ span {
 
 .debug .footer_top {
     width: 70%;
-    height: 700px;
+    height: 85%;
 }
 
 .debug .footer_bottom {
@@ -126,13 +131,13 @@ span {
 }
 
 .debug .footer_obj1 {
-    height: 70%;
+    height: 90%;
     background-color: var(--var-footer_obj1);
     border: 2px dashed black;
 }
 
 .debug .footer_obj2 {
-    height: 70%;
+    height: 90%;
     background-color: var(--var-footer_obj2);
     border: 2px dashed white;
 }
@@ -142,6 +147,8 @@ span {
     background-color: var(--var-footer_obj3);
     border: 2px dashed black;
 }
+
+/* #endregion Footer debug rules */
 
 /* #endregion Debug rules */
 
@@ -222,7 +229,7 @@ span {
 
 #site_footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
