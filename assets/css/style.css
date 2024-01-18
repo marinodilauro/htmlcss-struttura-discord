@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -19,8 +20,8 @@
     --var-footer_bg: #23272A;
     --var-footer_obj1: #F08080;
     --var-footer_obj2: #20B2AA;
-    --var-footer_obj3: #7FFFD4;
-    --var-footer_obj4: #FFB6C1;
+    --var-footer_bottom: #7FFFD4;
+    --var-footer_obj3: #FFB6C1;
 }
 
 ul {
@@ -31,12 +32,17 @@ span {
     padding: 0 1rem;
 }
 
+.logo_img,
+.login_btn {
+    padding: 0 1rem;
+}
+
 /* #endregion Utilities */
 
 /* #region Debug rules */
 
 /* Header debug rules */
-.debug header {
+.debug #site_header {
     height: 80px;
     background-color: var(--var-header_bg);
 }
@@ -59,7 +65,7 @@ span {
     border: 2px dashed black;
 }
 
-/* Main section debug rules */
+/* Sections debug rules */
 .debug .main_section_container {
     width: 50%;
     height: 500px;
@@ -101,12 +107,47 @@ span {
     background-color: var(--var-section_obj3);
 }
 
+/* Footer debug rules */
+
+.debug #site_footer {
+    height: 700px;
+    background-color: var(--var-footer_bg);
+}
+
+.debug .footer_top {
+    width: 70%;
+    height: 700px;
+}
+
+.debug .footer_bottom {
+    width: 70%;
+    height: 10%;
+    background-color: var(--var-footer_bottom);
+}
+
+.debug .footer_obj1 {
+    height: 70%;
+    background-color: var(--var-footer_obj1);
+    border: 2px dashed black;
+}
+
+.debug .footer_obj2 {
+    height: 70%;
+    background-color: var(--var-footer_obj2);
+    border: 2px dashed white;
+}
+
+.debug .footer_obj3 {
+    height: 40%;
+    background-color: var(--var-footer_obj3);
+    border: 2px dashed black;
+}
 
 /* #endregion Debug rules */
 
 /* #region Header */
 
-header {
+#site_header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,11 +158,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 48px;
-}
-
-#logo_img,
-#login_btn {
-    padding: 0 1rem;
 }
 
 .logo,
@@ -180,6 +216,39 @@ header {
     flex-grow: 1;
 }
 
-
-
 /* #endregion Main */
+
+/* #region Footer */
+
+#site_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_obj1 {
+    flex-grow: 1.2;
+}
+
+.footer_obj2 {
+    flex-grow: 1;
+}
+
+.footer_obj3 {
+    display: flex;
+}
+
+/* #endregion Footer */
